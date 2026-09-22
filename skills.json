@@ -1,131 +1,96 @@
 {
-    "Python": [
-        "python",
-        "py"
-    ],
-    "Machine Learning": [
-        "machine learning",
-        "ml"
-    ],
-    "Deep Learning": [
-        "deep learning",
-        "neural network",
-        "neural networks"
-    ],
-    "SQL": [
-        "sql",
-        "mysql",
-        "postgresql",
-        "oracle"
-    ],
-    "Java": [
-        "java",
-        "core java"
-    ],
-    "JavaScript": [
-        "javascript",
-        "js"
-    ],
-    "HTML": [
-        "html",
-        "html5"
-    ],
-    "CSS": [
-        "css",
-        "css3"
-    ],
-    "React": [
-        "react",
-        "reactjs"
-    ],
-    "Git": [
-        "git",
-        "github",
-        "gitlab"
-    ],
-    "TensorFlow": [
-        "tensorflow"
-    ],
-    "PyTorch": [
-        "pytorch"
-    ],
-    "Pandas": [
-        "pandas"
-    ],
-    "NumPy": [
-        "numpy"
-    ],
-    "Scikit-learn": [
-        "scikit-learn",
-        "sklearn"
-    ],
-    "Statistics": [
-        "statistics",
-        "statistical analysis"
-    ],
-    "NLP": [
-        "nlp",
-        "natural language processing"
-    ],
-    "AWS": [
-        "aws",
-        "amazon web services"
-    ],
-    "Azure": [
-        "azure",
-        "microsoft azure"
-    ],
-    "Docker": [
-        "docker"
-    ],
-    "Kubernetes": [
-        "kubernetes",
-        "k8s"
-    ],
-    "Linux": [
-        "linux",
-        "ubuntu"
-    ],
-    "Networking": [
-        "networking",
-        "computer networks"
-    ],
-    "Power BI": [
-        "power bi",
-        "powerbi"
-    ],
-    "Excel": [
-        "excel",
-        "microsoft excel"
-    ],
-    "OOP": [
-        "oop",
-        "object oriented programming",
-        "object-oriented programming"
-    ],
-    "Data Structures": [
-        "data structures",
-        "dsa",
-        "data structure"
-    ],
-    "REST API": [
-        "rest api",
-        "restful api",
-        "api"
-    ],
-    "Spring Boot": [
-        "spring boot"
-    ],
-    "Business Analysis": [
-        "business analysis",
-        "business analyst"
-    ],
-    "Communication": [
-        "communication",
-        "communication skills"
-    ],
-    "Agile": [
-        "agile",
-        "scrum"
-    ]
+  "Python": ["python", "py"],
+  "Machine Learning": ["machine learning", "ml"],
+  "Deep Learning": ["deep learning", "neural network", "neural networks"],
+  "TensorFlow": ["tensorflow"],
+  "PyTorch": ["pytorch"],
+  "Scikit-learn": ["scikit-learn", "sklearn"],
+  "NLP": ["nlp", "natural language processing"],
+  "Transformers": ["transformers", "hugging face"],
+  "Generative AI": ["generative ai", "genai", "generative artificial intelligence"],
+  "LLM": ["llm", "large language model", "large language models"],
+  "Prompt Engineering": ["prompt engineering", "prompt design"],
+  "RAG": ["rag", "retrieval augmented generation", "retrieval-augmented generation"],
+  "Vector Database": ["vector database", "vector db", "vectordb"],
+  "Computer Vision": ["computer vision", "cv"],
+  "OpenCV": ["opencv", "open cv"],
+  "SQL": ["sql"],
+  "MySQL": ["mysql"],
+  "PostgreSQL": ["postgresql", "postgres"],
+  "Oracle": ["oracle", "oracle database"],
+  "Database Administration": ["database administration", "database administrator", "dba"],
+  "Backup and Recovery": ["backup and recovery", "database backup"],
+  "Performance Tuning": ["performance tuning", "query optimization"],
+  "Java": ["java", "core java"],
+  "OOP": ["oop", "object oriented programming", "object-oriented programming"],
+  "Data Structures": ["data structures", "data structure", "dsa"],
+  "REST API": ["rest api", "restful api", "rest api development"],
+  "Spring Boot": ["spring boot"],
+  "HTML": ["html", "html5"],
+  "CSS": ["css", "css3"],
+  "JavaScript": ["javascript", "js"],
+  "TypeScript": ["typescript", "ts"],
+  "React": ["react", "reactjs", "react.js"],
+  "Node.js": ["node.js", "nodejs", "node"],
+  "Kotlin": ["kotlin"],
+  "Android": ["android", "android development"],
+  "Flutter": ["flutter"],
+  "React Native": ["react native"],
+  "UI Design": ["ui design", "user interface design", "user interface"],
+  "Responsive Design": ["responsive design", "responsive web design"],
+  "AWS": ["aws", "amazon web services"],
+  "Azure": ["azure", "microsoft azure"],
+  "GCP": ["gcp", "google cloud platform"],
+  "Cloud": ["cloud", "cloud computing"],
+  "Linux": ["linux", "ubuntu"],
+  "Networking": ["networking", "computer networks", "network administration"],
+  "Docker": ["docker"],
+  "Kubernetes": ["kubernetes", "k8s"],
+  "Jenkins": ["jenkins"],
+  "CI/CD": ["ci/cd", "continuous integration", "continuous deployment", "continuous delivery"],
+  "Terraform": ["terraform"],
+  "MLflow": ["mlflow"],
+  "Monitoring": ["monitoring", "system monitoring", "application monitoring"],
+  "Cybersecurity": ["cybersecurity", "cyber security", "information security"],
+  "Network Security": ["network security"],
+  "Cloud Security": ["cloud security"],
+  "Firewalls": ["firewall", "firewalls"],
+  "SIEM": ["siem"],
+  "Splunk": ["splunk"],
+  "Incident Response": ["incident response", "security incident response"],
+  "Risk Management": ["risk management", "security risk management"],
+  "Software Testing": ["software testing", "software test"],
+  "Manual Testing": ["manual testing", "manual software testing"],
+  "Test Cases": ["test cases", "test case"],
+  "Jira": ["jira"],
+  "API Testing": ["api testing"],
+  "Selenium": ["selenium"],
+  "Test Automation": ["test automation", "automated testing", "automation testing"],
+  "ETL": ["etl", "extract transform load", "extract, transform, load"],
+  "Apache Spark": ["apache spark", "spark"],
+  "Data Warehousing": ["data warehousing", "data warehouse"],
+  "Statistics": ["statistics", "statistical analysis"],
+  "Pandas": ["pandas"],
+  "NumPy": ["numpy", "numpy library"],
+  "Data Visualization": ["data visualization", "data visualisation"],
+  "Excel": ["excel", "microsoft excel"],
+  "Power BI": ["power bi", "powerbi"],
+  "Tableau": ["tableau"],
+  "Business Analysis": ["business analysis", "business analyst"],
+  "Requirements Gathering": ["requirements gathering", "requirements analysis"],
+  "Communication": ["communication", "communication skills"],
+  "Agile": ["agile", "agile methodology"],
+  "Scrum": ["scrum"],
+  "Figma": ["figma"],
+  "UX Design": ["ux design", "user experience design", "user experience"],
+  "Wireframing": ["wireframing", "wireframes"],
+  "Prototyping": ["prototyping", "prototype design"],
+  "User Research": ["user research", "user research methods"],
+  "Adobe XD": ["adobe xd"],
+  "Product Management": ["product management", "product manager"],
+  "Product Strategy": ["product strategy"],
+  "Market Research": ["market research"],
+  "Analytics": ["analytics", "data analytics"],
+  "Problem Solving": ["problem solving", "problem-solving"],
+  "Git": ["git", "github", "gitlab"]
 }
