@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import os
-import json
 import re
+from werkzeug.utils import secure_filename
 from PyPDF2 import PdfReader
 from docx import Document
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -9,10 +9,24 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 app = Flask(__name__)
 
+# --------------------------------------------------
+# UPLOAD CONFIGURATION
+# --------------------------------------------------
+
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 app.config["UPLOAD_FOLDER"] = UPLOAD_FOLDER
+app.config["MAX_CONTENT_LENGTH"] = 10 * 1024 * 1024
+
+ALLOWED_EXTENSIONS = {"pdf", "docx"}
+
+
+def allowed_file(filename):
+    return (
+        "." in filename
+        and filename.rsplit(".", 1)[1].lower() in ALLOWED_EXTENSIONS
+    )
 
 
 # --------------------------------------------------
@@ -39,11 +53,476 @@ COMPANIES = [
 
 
 # --------------------------------------------------
-# LOAD SKILLS
+# SKILL DICTIONARY
+# No external skills.json required
 # --------------------------------------------------
 
-with open("data/skills.json", "r", encoding="utf-8") as file:
-    skill_dictionary = json.load(file)
+skill_dictionary = {
+
+    "Python": [
+        "python",
+        "py"
+    ],
+
+    "Machine Learning": [
+        "machine learning",
+        "ml"
+    ],
+
+    "Deep Learning": [
+        "deep learning",
+        "neural network",
+        "neural networks"
+    ],
+
+    "TensorFlow": [
+        "tensorflow"
+    ],
+
+    "PyTorch": [
+        "pytorch"
+    ],
+
+    "Scikit-learn": [
+        "scikit-learn",
+        "sklearn"
+    ],
+
+    "NLP": [
+        "nlp",
+        "natural language processing"
+    ],
+
+    "Transformers": [
+        "transformers",
+        "hugging face"
+    ],
+
+    "Generative AI": [
+        "generative ai",
+        "genai",
+        "generative artificial intelligence"
+    ],
+
+    "LLM": [
+        "llm",
+        "large language model",
+        "large language models"
+    ],
+
+    "Prompt Engineering": [
+        "prompt engineering",
+        "prompt design"
+    ],
+
+    "RAG": [
+        "rag",
+        "retrieval augmented generation",
+        "retrieval-augmented generation"
+    ],
+
+    "Vector Database": [
+        "vector database",
+        "vector db",
+        "vectordb"
+    ],
+
+    "Computer Vision": [
+        "computer vision"
+    ],
+
+    "OpenCV": [
+        "opencv",
+        "open cv"
+    ],
+
+    "SQL": [
+        "sql"
+    ],
+
+    "MySQL": [
+        "mysql"
+    ],
+
+    "PostgreSQL": [
+        "postgresql",
+        "postgres"
+    ],
+
+    "Oracle": [
+        "oracle",
+        "oracle database"
+    ],
+
+    "Database Administration": [
+        "database administration",
+        "database administrator",
+        "dba"
+    ],
+
+    "Backup and Recovery": [
+        "backup and recovery",
+        "database backup"
+    ],
+
+    "Performance Tuning": [
+        "performance tuning",
+        "query optimization"
+    ],
+
+    "Java": [
+        "java",
+        "core java"
+    ],
+
+    "OOP": [
+        "oop",
+        "object oriented programming",
+        "object-oriented programming"
+    ],
+
+    "Data Structures": [
+        "data structures",
+        "data structure",
+        "dsa"
+    ],
+
+    "REST API": [
+        "rest api",
+        "restful api",
+        "rest api development"
+    ],
+
+    "Spring Boot": [
+        "spring boot"
+    ],
+
+    "HTML": [
+        "html",
+        "html5"
+    ],
+
+    "CSS": [
+        "css",
+        "css3"
+    ],
+
+    "JavaScript": [
+        "javascript",
+        "js"
+    ],
+
+    "TypeScript": [
+        "typescript",
+        "ts"
+    ],
+
+    "React": [
+        "react",
+        "reactjs",
+        "react.js"
+    ],
+
+    "Node.js": [
+        "node.js",
+        "nodejs",
+        "node"
+    ],
+
+    "Kotlin": [
+        "kotlin"
+    ],
+
+    "Android": [
+        "android",
+        "android development"
+    ],
+
+    "Flutter": [
+        "flutter"
+    ],
+
+    "React Native": [
+        "react native"
+    ],
+
+    "UI Design": [
+        "ui design",
+        "user interface design",
+        "user interface"
+    ],
+
+    "Responsive Design": [
+        "responsive design",
+        "responsive web design"
+    ],
+
+    "AWS": [
+        "aws",
+        "amazon web services"
+    ],
+
+    "Azure": [
+        "azure",
+        "microsoft azure"
+    ],
+
+    "GCP": [
+        "gcp",
+        "google cloud platform"
+    ],
+
+    "Cloud": [
+        "cloud",
+        "cloud computing"
+    ],
+
+    "Linux": [
+        "linux",
+        "ubuntu"
+    ],
+
+    "Networking": [
+        "networking",
+        "computer networks",
+        "network administration"
+    ],
+
+    "Docker": [
+        "docker"
+    ],
+
+    "Kubernetes": [
+        "kubernetes",
+        "k8s"
+    ],
+
+    "Jenkins": [
+        "jenkins"
+    ],
+
+    "CI/CD": [
+        "ci/cd",
+        "continuous integration",
+        "continuous deployment",
+        "continuous delivery"
+    ],
+
+    "Terraform": [
+        "terraform"
+    ],
+
+    "MLflow": [
+        "mlflow"
+    ],
+
+    "Monitoring": [
+        "monitoring",
+        "system monitoring",
+        "application monitoring"
+    ],
+
+    "Cybersecurity": [
+        "cybersecurity",
+        "cyber security",
+        "information security"
+    ],
+
+    "Network Security": [
+        "network security"
+    ],
+
+    "Cloud Security": [
+        "cloud security"
+    ],
+
+    "Firewalls": [
+        "firewall",
+        "firewalls"
+    ],
+
+    "SIEM": [
+        "siem"
+    ],
+
+    "Splunk": [
+        "splunk"
+    ],
+
+    "Incident Response": [
+        "incident response",
+        "security incident response"
+    ],
+
+    "Risk Management": [
+        "risk management",
+        "security risk management"
+    ],
+
+    "Software Testing": [
+        "software testing",
+        "software test"
+    ],
+
+    "Manual Testing": [
+        "manual testing",
+        "manual software testing"
+    ],
+
+    "Test Cases": [
+        "test cases",
+        "test case"
+    ],
+
+    "Jira": [
+        "jira"
+    ],
+
+    "API Testing": [
+        "api testing"
+    ],
+
+    "Selenium": [
+        "selenium"
+    ],
+
+    "Test Automation": [
+        "test automation",
+        "automated testing",
+        "automation testing"
+    ],
+
+    "ETL": [
+        "etl",
+        "extract transform load",
+        "extract, transform, load"
+    ],
+
+    "Apache Spark": [
+        "apache spark",
+        "spark"
+    ],
+
+    "Data Warehousing": [
+        "data warehousing",
+        "data warehouse"
+    ],
+
+    "Statistics": [
+        "statistics",
+        "statistical analysis"
+    ],
+
+    "Pandas": [
+        "pandas"
+    ],
+
+    "NumPy": [
+        "numpy",
+        "numpy library"
+    ],
+
+    "Data Visualization": [
+        "data visualization",
+        "data visualisation"
+    ],
+
+    "Excel": [
+        "excel",
+        "microsoft excel"
+    ],
+
+    "Power BI": [
+        "power bi",
+        "powerbi"
+    ],
+
+    "Tableau": [
+        "tableau"
+    ],
+
+    "Business Analysis": [
+        "business analysis",
+        "business analyst"
+    ],
+
+    "Requirements Gathering": [
+        "requirements gathering",
+        "requirements analysis"
+    ],
+
+    "Communication": [
+        "communication",
+        "communication skills"
+    ],
+
+    "Agile": [
+        "agile",
+        "agile methodology"
+    ],
+
+    "Scrum": [
+        "scrum"
+    ],
+
+    "Figma": [
+        "figma"
+    ],
+
+    "UX Design": [
+        "ux design",
+        "user experience design",
+        "user experience"
+    ],
+
+    "Wireframing": [
+        "wireframing",
+        "wireframes"
+    ],
+
+    "Prototyping": [
+        "prototyping",
+        "prototype design"
+    ],
+
+    "User Research": [
+        "user research",
+        "user research methods"
+    ],
+
+    "Adobe XD": [
+        "adobe xd"
+    ],
+
+    "Product Management": [
+        "product management",
+        "product manager"
+    ],
+
+    "Product Strategy": [
+        "product strategy"
+    ],
+
+    "Market Research": [
+        "market research"
+    ],
+
+    "Analytics": [
+        "analytics",
+        "data analytics"
+    ],
+
+    "Problem Solving": [
+        "problem solving",
+        "problem-solving"
+    ],
+
+    "Git": [
+        "git",
+        "github",
+        "gitlab"
+    ]
+}
 
 
 # --------------------------------------------------
@@ -354,7 +833,7 @@ COMPANY_EXTRAS = {
 
 
 # --------------------------------------------------
-# CREATE JOB DATA AUTOMATICALLY
+# CREATE JOB DATA
 # --------------------------------------------------
 
 jobs = []
@@ -365,8 +844,8 @@ for role, required_skills in ROLE_REQUIREMENTS.items():
 
         skills = list(required_skills)
 
-        # Add company-specific skills
         for extra_skill in COMPANY_EXTRAS.get(company, []):
+
             if extra_skill not in skills:
                 skills.append(extra_skill)
 
@@ -390,22 +869,30 @@ def extract_resume_text(filepath):
 
     text = ""
 
-    if filepath.lower().endswith(".pdf"):
+    try:
 
-        reader = PdfReader(filepath)
+        if filepath.lower().endswith(".pdf"):
 
-        for page in reader.pages:
-            page_text = page.extract_text()
+            reader = PdfReader(filepath)
 
-            if page_text:
-                text += page_text + "\n"
+            for page in reader.pages:
 
-    elif filepath.lower().endswith(".docx"):
+                page_text = page.extract_text()
 
-        document = Document(filepath)
+                if page_text:
+                    text += page_text + "\n"
 
-        for paragraph in document.paragraphs:
-            text += paragraph.text + "\n"
+        elif filepath.lower().endswith(".docx"):
+
+            document = Document(filepath)
+
+            for paragraph in document.paragraphs:
+                text += paragraph.text + "\n"
+
+    except Exception as e:
+
+        print("Resume extraction error:", e)
+        return ""
 
     return text.lower()
 
@@ -424,7 +911,9 @@ def extract_skills(text):
 
         for keyword in keywords:
 
-            pattern = r"\b" + re.escape(keyword.lower()) + r"\b"
+            pattern = r"(?<!\w)" + re.escape(
+                keyword.lower()
+            ) + r"(?!\w)"
 
             if re.search(pattern, text_lower):
 
@@ -443,19 +932,28 @@ def calculate_similarity(resume_text, job_text):
     if not resume_text.strip() or not job_text.strip():
         return 0
 
-    vectorizer = TfidfVectorizer(stop_words="english")
+    try:
 
-    vectors = vectorizer.fit_transform([
-        resume_text,
-        job_text
-    ])
+        vectorizer = TfidfVectorizer(
+            stop_words="english"
+        )
 
-    similarity = cosine_similarity(
-        vectors[0:1],
-        vectors[1:2]
-    )[0][0]
+        vectors = vectorizer.fit_transform([
+            resume_text,
+            job_text
+        ])
 
-    return round(similarity * 100, 2)
+        similarity = cosine_similarity(
+            vectors[0:1],
+            vectors[1:2]
+        )[0][0]
+
+        return round(similarity * 100, 2)
+
+    except Exception as e:
+
+        print("TF-IDF error:", e)
+        return 0
 
 
 # --------------------------------------------------
@@ -465,41 +963,28 @@ def calculate_similarity(resume_text, job_text):
 @app.route("/")
 def index():
 
-    return render_template(
-        "index.html"
-    )
+    return render_template("index.html")
 
 
 # --------------------------------------------------
-# ROLE PAGE
+# ROLE SELECTION PAGE
 # --------------------------------------------------
 
 @app.route("/roles")
 def roles():
 
-    roles_list = sorted(ROLE_REQUIREMENTS.keys())
-
-    selected_role = request.args.get("role")
-
-    companies = []
-
-    if selected_role in ROLE_REQUIREMENTS:
-
-        companies = [
-            job for job in jobs
-            if job["role"] == selected_role
-        ]
+    roles_list = sorted(
+        ROLE_REQUIREMENTS.keys()
+    )
 
     return render_template(
         "roles.html",
-        roles=roles_list,
-        selected_role=selected_role,
-        companies=companies
+        roles=roles_list
     )
 
 
 # --------------------------------------------------
-# ANALYZE PAGE
+# RESUME ANALYSIS PAGE
 # --------------------------------------------------
 
 @app.route("/analyze")
@@ -507,20 +992,20 @@ def analyze():
 
     selected_role = request.args.get("role")
 
-    companies = [
-        job for job in jobs
-        if job["role"] == selected_role
-    ]
+    if selected_role not in ROLE_REQUIREMENTS:
+
+        return redirect(
+            url_for("roles")
+        )
 
     return render_template(
         "analyze.html",
-        selected_role=selected_role,
-        companies=companies
+        selected_role=selected_role
     )
 
 
 # --------------------------------------------------
-# RESUME ANALYSIS
+# ANALYZE RESUME
 # --------------------------------------------------
 
 @app.route("/analyze_resume", methods=["POST"])
@@ -528,9 +1013,15 @@ def analyze_resume():
 
     selected_role = request.form.get("role")
 
+    if selected_role not in ROLE_REQUIREMENTS:
+
+        return redirect(
+            url_for("roles")
+        )
+
     resume = request.files.get("resume")
 
-    if not resume:
+    if resume is None:
 
         return "Please upload a resume."
 
@@ -538,7 +1029,13 @@ def analyze_resume():
 
         return "Please select a resume."
 
-    filename = resume.filename
+    if not allowed_file(resume.filename):
+
+        return "Only PDF and DOCX files are supported."
+
+    filename = secure_filename(
+        resume.filename
+    )
 
     filepath = os.path.join(
         app.config["UPLOAD_FOLDER"],
@@ -547,13 +1044,33 @@ def analyze_resume():
 
     resume.save(filepath)
 
+    # ----------------------------------------------
     # Extract resume text
-    resume_text = extract_resume_text(filepath)
+    # ----------------------------------------------
 
+    resume_text = extract_resume_text(
+        filepath
+    )
+
+    if not resume_text.strip():
+
+        return (
+            "Could not extract text from the resume. "
+            "Please upload a text-based PDF or DOCX file."
+        )
+
+    # ----------------------------------------------
     # Detect skills
-    detected_skills = extract_skills(resume_text)
+    # ----------------------------------------------
 
-    # Get selected role jobs
+    detected_skills = extract_skills(
+        resume_text
+    )
+
+    # ----------------------------------------------
+    # Get jobs for selected role
+    # ----------------------------------------------
+
     selected_jobs = [
         job for job in jobs
         if job["role"] == selected_role
@@ -561,17 +1078,23 @@ def analyze_resume():
 
     results = []
 
+    # ----------------------------------------------
+    # Compare resume with every company
+    # ----------------------------------------------
+
     for job in selected_jobs:
 
         required_skills = job["skills"]
 
         matched_skills = [
-            skill for skill in required_skills
+            skill
+            for skill in required_skills
             if skill in detected_skills
         ]
 
         missing_skills = [
-            skill for skill in required_skills
+            skill
+            for skill in required_skills
             if skill not in detected_skills
         ]
 
@@ -587,7 +1110,7 @@ def analyze_resume():
 
             skill_score = 0
 
-        # Job description
+        # Job text for TF-IDF
         job_text = (
             job["role"]
             + " "
@@ -635,8 +1158,10 @@ def analyze_resume():
             "final_score": final_score
         })
 
+    # ----------------------------------------------
+    # Sort by score
+    # ----------------------------------------------
 
-    # Sort companies according to match score
     results.sort(
         key=lambda x: x["final_score"],
         reverse=True
@@ -644,13 +1169,23 @@ def analyze_resume():
 
     return render_template(
         "results.html",
-
         role=selected_role,
-
         detected_skills=detected_skills,
-
         results=results
     )
+
+
+# --------------------------------------------------
+# ERROR HANDLERS
+# --------------------------------------------------
+
+@app.errorhandler(413)
+def file_too_large(error):
+
+    return (
+        "Resume file is too large. "
+        "Maximum size is 10 MB."
+    ), 413
 
 
 # --------------------------------------------------
@@ -678,6 +1213,15 @@ if __name__ == "__main__":
         len(jobs)
     )
 
+    port = int(
+        os.environ.get(
+            "PORT",
+            5000
+        )
+    )
+
     app.run(
-        debug=True
+        host="0.0.0.0",
+        port=port,
+        debug=False
     )
