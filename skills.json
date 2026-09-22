@@ -1,0 +1,131 @@
+{
+    "Python": [
+        "python",
+        "py"
+    ],
+    "Machine Learning": [
+        "machine learning",
+        "ml"
+    ],
+    "Deep Learning": [
+        "deep learning",
+        "neural network",
+        "neural networks"
+    ],
+    "SQL": [
+        "sql",
+        "mysql",
+        "postgresql",
+        "oracle"
+    ],
+    "Java": [
+        "java",
+        "core java"
+    ],
+    "JavaScript": [
+        "javascript",
+        "js"
+    ],
+    "HTML": [
+        "html",
+        "html5"
+    ],
+    "CSS": [
+        "css",
+        "css3"
+    ],
+    "React": [
+        "react",
+        "reactjs"
+    ],
+    "Git": [
+        "git",
+        "github",
+        "gitlab"
+    ],
+    "TensorFlow": [
+        "tensorflow"
+    ],
+    "PyTorch": [
+        "pytorch"
+    ],
+    "Pandas": [
+        "pandas"
+    ],
+    "NumPy": [
+        "numpy"
+    ],
+    "Scikit-learn": [
+        "scikit-learn",
+        "sklearn"
+    ],
+    "Statistics": [
+        "statistics",
+        "statistical analysis"
+    ],
+    "NLP": [
+        "nlp",
+        "natural language processing"
+    ],
+    "AWS": [
+        "aws",
+        "amazon web services"
+    ],
+    "Azure": [
+        "azure",
+        "microsoft azure"
+    ],
+    "Docker": [
+        "docker"
+    ],
+    "Kubernetes": [
+        "kubernetes",
+        "k8s"
+    ],
+    "Linux": [
+        "linux",
+        "ubuntu"
+    ],
+    "Networking": [
+        "networking",
+        "computer networks"
+    ],
+    "Power BI": [
+        "power bi",
+        "powerbi"
+    ],
+    "Excel": [
+        "excel",
+        "microsoft excel"
+    ],
+    "OOP": [
+        "oop",
+        "object oriented programming",
+        "object-oriented programming"
+    ],
+    "Data Structures": [
+        "data structures",
+        "dsa",
+        "data structure"
+    ],
+    "REST API": [
+        "rest api",
+        "restful api",
+        "api"
+    ],
+    "Spring Boot": [
+        "spring boot"
+    ],
+    "Business Analysis": [
+        "business analysis",
+        "business analyst"
+    ],
+    "Communication": [
+        "communication",
+        "communication skills"
+    ],
+    "Agile": [
+        "agile",
+        "scrum"
+    ]
+}

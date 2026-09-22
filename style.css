@@ -1,0 +1,234 @@
+body {
+
+    background: #f5f7fb;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+}
+
+
+.hero {
+
+    min-height: 500px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #1d2671,
+            #c33764
+        );
+
+    color: white;
+
+}
+
+
+.hero h1 {
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+}
+
+
+.hero h2 {
+
+    font-size: 40px;
+
+}
+
+
+.hero p {
+
+    max-width: 750px;
+
+    margin:
+        auto;
+
+}
+
+
+.feature-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    min-height: 180px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.role-form {
+
+    max-width: 600px;
+
+    margin:
+        40px auto;
+
+}
+
+
+.company-card {
+
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    height: 100%;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.skill {
+
+    display: inline-block;
+
+    padding:
+        7px 12px;
+
+    margin:
+        4px;
+
+    border-radius: 20px;
+
+    background: #e8f0ff;
+
+    color: #234;
+
+    font-size: 14px;
+
+}
+
+
+.company-badge {
+
+    display: inline-block;
+
+    background: #212529;
+
+    color: white;
+
+    padding:
+        8px 15px;
+
+    border-radius: 20px;
+
+    margin: 5px;
+
+}
+
+
+.upload-box {
+
+    max-width: 750px;
+
+    margin:
+        40px auto;
+
+    background: white;
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 5px 25px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.result-card {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.score {
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+}
+
+
+.matched {
+
+    display: inline-block;
+
+    background: #d1e7dd;
+
+    color: #0f5132;
+
+    padding:
+        8px 12px;
+
+    margin: 4px;
+
+    border-radius: 20px;
+
+}
+
+
+.missing {
+
+    display: inline-block;
+
+    background: #f8d7da;
+
+    color: #842029;
+
+    padding:
+        8px 12px;
+
+    margin: 4px;
+
+    border-radius: 20px;
+
+}
+
+
+footer {
+
+    background: #212529;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+}

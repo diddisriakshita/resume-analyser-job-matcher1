@@ -1,0 +1,776 @@
+[
+  {
+    "company": "Google",
+    "role": "AI Engineer",
+    "skills": ["Python", "Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "Git"],
+    "description": "Design and develop artificial intelligence and machine learning solutions."
+  },
+  {
+    "company": "Microsoft",
+    "role": "AI Engineer",
+    "skills": ["Python", "Machine Learning", "Deep Learning", "Azure", "TensorFlow", "Git"],
+    "description": "Develop AI applications and intelligent cloud-based solutions."
+  },
+  {
+    "company": "Amazon",
+    "role": "AI Engineer",
+    "skills": ["Python", "Machine Learning", "Deep Learning", "AWS", "PyTorch", "SQL"],
+    "description": "Build AI systems and machine learning solutions for large-scale applications."
+  },
+  {
+    "company": "IBM",
+    "role": "AI Engineer",
+    "skills": ["Python", "Machine Learning", "Deep Learning", "TensorFlow", "Cloud", "Git"],
+    "description": "Develop enterprise artificial intelligence and automation solutions."
+  },
+  {
+    "company": "Accenture",
+    "role": "AI Engineer",
+    "skills": ["Python", "Machine Learning", "Generative AI", "Deep Learning", "Cloud", "Agile"],
+    "description": "Develop AI-powered business solutions using modern machine learning technologies."
+  },
+
+  {
+    "company": "Google",
+    "role": "Machine Learning Engineer",
+    "skills": ["Python", "Machine Learning", "Deep Learning", "TensorFlow", "SQL", "Git"],
+    "description": "Build, train and deploy scalable machine learning models."
+  },
+  {
+    "company": "Amazon",
+    "role": "Machine Learning Engineer",
+    "skills": ["Python", "Machine Learning", "AWS", "Deep Learning", "SQL", "Docker"],
+    "description": "Develop production machine learning systems for large-scale applications."
+  },
+  {
+    "company": "Microsoft",
+    "role": "Machine Learning Engineer",
+    "skills": ["Python", "Machine Learning", "Azure", "TensorFlow", "Deep Learning", "Git"],
+    "description": "Develop and deploy machine learning models using cloud technologies."
+  },
+  {
+    "company": "IBM",
+    "role": "Machine Learning Engineer",
+    "skills": ["Python", "Machine Learning", "PyTorch", "Deep Learning", "SQL", "Docker"],
+    "description": "Create machine learning applications for enterprise environments."
+  },
+  {
+    "company": "TCS",
+    "role": "Machine Learning Engineer",
+    "skills": ["Python", "Machine Learning", "TensorFlow", "SQL", "Scikit-learn", "Git"],
+    "description": "Develop machine learning applications and analytics solutions."
+  },
+
+  {
+    "company": "TCS",
+    "role": "Data Scientist",
+    "skills": ["Python", "Machine Learning", "SQL", "Statistics", "Pandas", "NumPy"],
+    "description": "Analyze datasets and develop predictive models for business applications."
+  },
+  {
+    "company": "Infosys",
+    "role": "Data Scientist",
+    "skills": ["Python", "Machine Learning", "SQL", "Deep Learning", "Pandas", "TensorFlow"],
+    "description": "Build data science and artificial intelligence solutions."
+  },
+  {
+    "company": "Wipro",
+    "role": "Data Scientist",
+    "skills": ["Python", "Machine Learning", "SQL", "Statistics", "NLP", "Scikit-learn"],
+    "description": "Analyze large datasets and develop predictive analytics models."
+  },
+  {
+    "company": "Accenture",
+    "role": "Data Scientist",
+    "skills": ["Python", "Machine Learning", "SQL", "Deep Learning", "NLP", "Power BI"],
+    "description": "Develop data-driven AI solutions and predictive models."
+  },
+  {
+    "company": "Deloitte",
+    "role": "Data Scientist",
+    "skills": ["Python", "Machine Learning", "SQL", "Statistics", "Pandas", "Power BI"],
+    "description": "Use data science techniques to generate business insights."
+  },
+
+  {
+    "company": "Deloitte",
+    "role": "Data Analyst",
+    "skills": ["SQL", "Excel", "Power BI", "Statistics", "Python", "Data Visualization"],
+    "description": "Analyze business data and create dashboards and reports."
+  },
+  {
+    "company": "Accenture",
+    "role": "Data Analyst",
+    "skills": ["SQL", "Excel", "Power BI", "Python", "Statistics", "Tableau"],
+    "description": "Transform business data into actionable insights."
+  },
+  {
+    "company": "Cognizant",
+    "role": "Data Analyst",
+    "skills": ["SQL", "Excel", "Power BI", "Python", "Tableau", "Statistics"],
+    "description": "Analyze operational and business datasets to support decisions."
+  },
+  {
+    "company": "Genpact",
+    "role": "Data Analyst",
+    "skills": ["SQL", "Excel", "Power BI", "Statistics", "Python", "Data Visualization"],
+    "description": "Perform data analysis and develop business intelligence reports."
+  },
+  {
+    "company": "Walmart Global Tech",
+    "role": "Data Analyst",
+    "skills": ["SQL", "Python", "Excel", "Power BI", "Statistics", "Cloud"],
+    "description": "Analyze retail and business data to support technology-driven decisions."
+  },
+
+  {
+    "company": "Amazon",
+    "role": "Data Engineer",
+    "skills": ["Python", "SQL", "AWS", "ETL", "Apache Spark", "Data Warehousing"],
+    "description": "Build scalable data pipelines and data processing systems."
+  },
+  {
+    "company": "Google",
+    "role": "Data Engineer",
+    "skills": ["Python", "SQL", "GCP", "Apache Spark", "ETL", "Data Warehousing"],
+    "description": "Develop data platforms and pipelines for large-scale analytics."
+  },
+  {
+    "company": "Microsoft",
+    "role": "Data Engineer",
+    "skills": ["Python", "SQL", "Azure", "ETL", "Apache Spark", "Data Warehousing"],
+    "description": "Design and maintain cloud-based data engineering solutions."
+  },
+  {
+    "company": "IBM",
+    "role": "Data Engineer",
+    "skills": ["Python", "SQL", "Cloud", "ETL", "Apache Spark", "Linux"],
+    "description": "Build enterprise data pipelines and processing platforms."
+  },
+  {
+    "company": "Capgemini",
+    "role": "Data Engineer",
+    "skills": ["Python", "SQL", "ETL", "Apache Spark", "Cloud", "Git"],
+    "description": "Develop data integration and engineering solutions."
+  },
+
+  {
+    "company": "Microsoft",
+    "role": "MLOps Engineer",
+    "skills": ["Python", "Machine Learning", "Docker", "Kubernetes", "Azure", "CI/CD"],
+    "description": "Automate machine learning deployment and model lifecycle management."
+  },
+  {
+    "company": "Amazon",
+    "role": "MLOps Engineer",
+    "skills": ["Python", "Machine Learning", "Docker", "Kubernetes", "AWS", "CI/CD"],
+    "description": "Build reliable machine learning deployment pipelines."
+  },
+  {
+    "company": "Google",
+    "role": "MLOps Engineer",
+    "skills": ["Python", "Machine Learning", "Docker", "Kubernetes", "GCP", "MLflow"],
+    "description": "Manage machine learning infrastructure and production workflows."
+  },
+  {
+    "company": "Accenture",
+    "role": "MLOps Engineer",
+    "skills": ["Python", "Machine Learning", "Docker", "Kubernetes", "Cloud", "Git"],
+    "description": "Develop automated ML operations and deployment solutions."
+  },
+  {
+    "company": "Persistent Systems",
+    "role": "MLOps Engineer",
+    "skills": ["Python", "Machine Learning", "Docker", "Kubernetes", "AWS", "MLflow"],
+    "description": "Implement scalable machine learning operations and deployment systems."
+  },
+
+  {
+    "company": "Microsoft",
+    "role": "Generative AI Engineer",
+    "skills": ["Python", "Generative AI", "LLM", "Prompt Engineering", "RAG", "Azure"],
+    "description": "Develop applications using generative AI and large language models."
+  },
+  {
+    "company": "Google",
+    "role": "Generative AI Engineer",
+    "skills": ["Python", "Generative AI", "LLM", "RAG", "TensorFlow", "GCP"],
+    "description": "Build generative AI applications and intelligent language systems."
+  },
+  {
+    "company": "Amazon",
+    "role": "Generative AI Engineer",
+    "skills": ["Python", "Generative AI", "LLM", "RAG", "AWS", "PyTorch"],
+    "description": "Create generative AI applications using cloud and foundation models."
+  },
+  {
+    "company": "Accenture",
+    "role": "Generative AI Engineer",
+    "skills": ["Python", "Generative AI", "LLM", "Prompt Engineering", "RAG", "Cloud"],
+    "description": "Develop enterprise generative AI solutions."
+  },
+  {
+    "company": "Cognizant",
+    "role": "Generative AI Engineer",
+    "skills": ["Python", "Generative AI", "LLM", "Prompt Engineering", "RAG", "SQL"],
+    "description": "Develop business applications using generative AI technologies."
+  },
+
+  {
+    "company": "Google",
+    "role": "NLP Engineer",
+    "skills": ["Python", "NLP", "Machine Learning", "Deep Learning", "Transformers", "TensorFlow"],
+    "description": "Develop natural language processing and language understanding systems."
+  },
+  {
+    "company": "Microsoft",
+    "role": "NLP Engineer",
+    "skills": ["Python", "NLP", "Deep Learning", "Transformers", "Azure", "PyTorch"],
+    "description": "Build intelligent language and conversational AI applications."
+  },
+  {
+    "company": "Amazon",
+    "role": "NLP Engineer",
+    "skills": ["Python", "NLP", "Machine Learning", "Transformers", "AWS", "PyTorch"],
+    "description": "Develop natural language solutions for large-scale applications."
+  },
+  {
+    "company": "IBM",
+    "role": "NLP Engineer",
+    "skills": ["Python", "NLP", "Machine Learning", "Deep Learning", "TensorFlow", "Cloud"],
+    "description": "Create enterprise NLP and conversational AI solutions."
+  },
+  {
+    "company": "Accenture",
+    "role": "NLP Engineer",
+    "skills": ["Python", "NLP", "Machine Learning", "Transformers", "Cloud", "Git"],
+    "description": "Develop NLP solutions for enterprise applications."
+  },
+
+  {
+    "company": "Amazon",
+    "role": "Computer Vision Engineer",
+    "skills": ["Python", "Computer Vision", "OpenCV", "Deep Learning", "PyTorch", "AWS"],
+    "description": "Develop computer vision systems for image and video analysis."
+  },
+  {
+    "company": "Google",
+    "role": "Computer Vision Engineer",
+    "skills": ["Python", "Computer Vision", "OpenCV", "Deep Learning", "TensorFlow", "GCP"],
+    "description": "Build image recognition and computer vision applications."
+  },
+  {
+    "company": "Microsoft",
+    "role": "Computer Vision Engineer",
+    "skills": ["Python", "Computer Vision", "OpenCV", "Deep Learning", "Azure", "TensorFlow"],
+    "description": "Develop intelligent vision solutions using deep learning."
+  },
+  {
+    "company": "TCS",
+    "role": "Computer Vision Engineer",
+    "skills": ["Python", "Computer Vision", "OpenCV", "Machine Learning", "TensorFlow", "NumPy"],
+    "description": "Develop image processing and computer vision applications."
+  },
+  {
+    "company": "Wipro",
+    "role": "Computer Vision Engineer",
+    "skills": ["Python", "Computer Vision", "OpenCV", "Deep Learning", "PyTorch", "NumPy"],
+    "description": "Develop AI-based image and video analytics solutions."
+  },
+
+  {
+    "company": "TCS",
+    "role": "Software Engineer",
+    "skills": ["Java", "Python", "SQL", "OOP", "Data Structures", "Git"],
+    "description": "Design, develop and maintain software applications."
+  },
+  {
+    "company": "Infosys",
+    "role": "Software Engineer",
+    "skills": ["Java", "Python", "SQL", "OOP", "Data Structures", "Git"],
+    "description": "Develop enterprise software applications and services."
+  },
+  {
+    "company": "Wipro",
+    "role": "Software Engineer",
+    "skills": ["Java", "Python", "SQL", "OOP", "REST API", "Git"],
+    "description": "Build and maintain scalable software solutions."
+  },
+  {
+    "company": "Cognizant",
+    "role": "Software Engineer",
+    "skills": ["Java", "Python", "SQL", "Spring Boot", "REST API", "Git"],
+    "description": "Develop enterprise applications and backend services."
+  },
+  {
+    "company": "HCLTech",
+    "role": "Software Engineer",
+    "skills": ["Java", "Python", "SQL", "OOP", "Data Structures", "Cloud"],
+    "description": "Design and implement software solutions for enterprise customers."
+  },
+
+  {
+    "company": "TCS",
+    "role": "Full Stack Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js", "SQL", "Git"],
+    "description": "Develop complete web applications using frontend and backend technologies."
+  },
+  {
+    "company": "Infosys",
+    "role": "Full Stack Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js", "SQL"],
+    "description": "Build responsive and scalable full-stack web applications."
+  },
+  {
+    "company": "Cognizant",
+    "role": "Full Stack Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js", "REST API"],
+    "description": "Develop frontend interfaces and backend web services."
+  },
+  {
+    "company": "Capgemini",
+    "role": "Full Stack Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Java", "SQL"],
+    "description": "Develop enterprise full-stack applications."
+  },
+  {
+    "company": "Freshworks",
+    "role": "Full Stack Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js", "REST API"],
+    "description": "Develop customer-focused web applications and services."
+  },
+
+  {
+    "company": "Adobe",
+    "role": "Frontend Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "UI Design"],
+    "description": "Create responsive and interactive user interfaces."
+  },
+  {
+    "company": "Microsoft",
+    "role": "Frontend Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "Git"],
+    "description": "Develop modern web interfaces and frontend applications."
+  },
+  {
+    "company": "Zoho",
+    "role": "Frontend Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "UI Design", "Git"],
+    "description": "Develop responsive web interfaces for business applications."
+  },
+  {
+    "company": "Freshworks",
+    "role": "Frontend Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "TypeScript", "UI Design"],
+    "description": "Build intuitive web interfaces for customer-focused products."
+  },
+  {
+    "company": "Cognizant",
+    "role": "Frontend Developer",
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Git", "REST API"],
+    "description": "Develop scalable frontend web applications."
+  },
+
+  {
+    "company": "Amazon",
+    "role": "Backend Developer",
+    "skills": ["Java", "Python", "SQL", "REST API", "Docker", "Git"],
+    "description": "Build scalable backend systems and APIs."
+  },
+  {
+    "company": "Microsoft",
+    "role": "Backend Developer",
+    "skills": ["Java", "Python", "SQL", "REST API", "Azure", "Docker"],
+    "description": "Develop backend services and cloud applications."
+  },
+  {
+    "company": "IBM",
+    "role": "Backend Developer",
+    "skills": ["Java", "Python", "SQL", "REST API", "Docker", "Linux"],
+    "description": "Develop enterprise backend applications and APIs."
+  },
+  {
+    "company": "TCS",
+    "role": "Backend Developer",
+    "skills": ["Java", "Python", "SQL", "Spring Boot", "REST API", "Git"],
+    "description": "Build enterprise backend services and APIs."
+  },
+  {
+    "company": "Infosys",
+    "role": "Backend Developer",
+    "skills": ["Java", "Python", "SQL", "Spring Boot", "REST API", "Git"],
+    "description": "Develop scalable server-side applications."
+  },
+
+  {
+    "company": "Google",
+    "role": "Mobile App Developer",
+    "skills": ["Java", "Kotlin", "Android", "REST API", "Git", "SQL"],
+    "description": "Develop mobile applications and services for Android platforms."
+  },
+  {
+    "company": "Microsoft",
+    "role": "Mobile App Developer",
+    "skills": ["Kotlin", "Android", "React Native", "REST API", "Git", "Azure"],
+    "description": "Develop cross-platform and mobile application solutions."
+  },
+  {
+    "company": "Amazon",
+    "role": "Mobile App Developer",
+    "skills": ["Java", "Kotlin", "Android", "AWS", "REST API", "Git"],
+    "description": "Build mobile applications for large-scale digital services."
+  },
+  {
+    "company": "Zoho",
+    "role": "Mobile App Developer",
+    "skills": ["Java", "Android", "Flutter", "REST API", "SQL", "Git"],
+    "description": "Develop mobile applications for business products."
+  },
+  {
+    "company": "Cognizant",
+    "role": "Mobile App Developer",
+    "skills": ["Java", "Kotlin", "Flutter", "Android", "REST API", "Git"],
+    "description": "Create mobile applications using native and cross-platform technologies."
+  },
+
+  {
+    "company": "Microsoft",
+    "role": "Cloud Engineer",
+    "skills": ["Azure", "Linux", "Docker", "Kubernetes", "Python", "Networking"],
+    "description": "Design and manage scalable cloud infrastructure."
+  },
+  {
+    "company": "Amazon",
+    "role": "Cloud Engineer",
+    "skills": ["AWS", "Linux", "Docker", "Kubernetes", "Python", "Networking"],
+    "description": "Deploy and manage cloud infrastructure using AWS."
+  },
+  {
+    "company": "Google",
+    "role": "Cloud Engineer",
+    "skills": ["GCP", "Linux", "Docker", "Kubernetes", "Python", "Networking"],
+    "description": "Build and maintain Google Cloud infrastructure."
+  },
+  {
+    "company": "IBM",
+    "role": "Cloud Engineer",
+    "skills": ["Cloud", "Linux", "Docker", "Kubernetes", "Python", "Networking"],
+    "description": "Implement enterprise cloud infrastructure and services."
+  },
+  {
+    "company": "Accenture",
+    "role": "Cloud Engineer",
+    "skills": ["AWS", "Azure", "Linux", "Docker", "Kubernetes", "Terraform"],
+    "description": "Develop and manage cloud infrastructure solutions."
+  },
+
+  {
+    "company": "Amazon",
+    "role": "DevOps Engineer",
+    "skills": ["AWS", "Linux", "Docker", "Kubernetes", "Jenkins", "CI/CD"],
+    "description": "Automate software delivery and cloud infrastructure."
+  },
+  {
+    "company": "Microsoft",
+    "role": "DevOps Engineer",
+    "skills": ["Azure", "Linux", "Docker", "Kubernetes", "Jenkins", "CI/CD"],
+    "description": "Build automated development and deployment pipelines."
+  },
+  {
+    "company": "Accenture",
+    "role": "DevOps Engineer",
+    "skills": ["AWS", "Azure", "Docker", "Kubernetes", "Terraform", "CI/CD"],
+    "description": "Implement DevOps automation and cloud deployment practices."
+  },
+  {
+    "company": "Infosys",
+    "role": "DevOps Engineer",
+    "skills": ["AWS", "Linux", "Docker", "Jenkins", "Git", "CI/CD"],
+    "description": "Automate software development and deployment processes."
+  },
+  {
+    "company": "Wipro",
+    "role": "DevOps Engineer",
+    "skills": ["Azure", "Linux", "Docker", "Kubernetes", "Jenkins", "Git"],
+    "description": "Develop automated infrastructure and continuous delivery systems."
+  },
+
+  {
+    "company": "Google",
+    "role": "Site Reliability Engineer",
+    "skills": ["Linux", "Python", "Kubernetes", "Docker", "GCP", "Monitoring"],
+    "description": "Improve system reliability, availability and performance."
+  },
+  {
+    "company": "Microsoft",
+    "role": "Site Reliability Engineer",
+    "skills": ["Linux", "Python", "Kubernetes", "Azure", "Monitoring", "CI/CD"],
+    "description": "Maintain highly reliable production systems."
+  },
+  {
+    "company": "Amazon",
+    "role": "Site Reliability Engineer",
+    "skills": ["Linux", "Python", "Kubernetes", "AWS", "Docker", "Monitoring"],
+    "description": "Build reliable and scalable cloud services."
+  },
+  {
+    "company": "IBM",
+    "role": "Site Reliability Engineer",
+    "skills": ["Linux", "Python", "Docker", "Kubernetes", "Cloud", "Monitoring"],
+    "description": "Improve production system reliability and observability."
+  },
+  {
+    "company": "Walmart Global Tech",
+    "role": "Site Reliability Engineer",
+    "skills": ["Linux", "Python", "Kubernetes", "Cloud", "Monitoring", "CI/CD"],
+    "description": "Maintain reliable technology platforms for large-scale systems."
+  },
+
+  {
+    "company": "Cisco",
+    "role": "Cybersecurity Engineer",
+    "skills": ["Cybersecurity", "Network Security", "Linux", "Python", "Firewalls", "Networking"],
+    "description": "Design and implement security controls for networks and systems."
+  },
+  {
+    "company": "Microsoft",
+    "role": "Cybersecurity Engineer",
+    "skills": ["Cybersecurity", "Cloud Security", "Azure", "Linux", "SIEM", "Networking"],
+    "description": "Protect cloud and enterprise systems against security threats."
+  },
+  {
+    "company": "IBM",
+    "role": "Cybersecurity Engineer",
+    "skills": ["Cybersecurity", "Network Security", "SIEM", "Linux", "Cloud Security", "Python"],
+    "description": "Develop enterprise cybersecurity solutions."
+  },
+  {
+    "company": "TCS",
+    "role": "Cybersecurity Engineer",
+    "skills": ["Cybersecurity", "Network Security", "SIEM", "Linux", "Firewalls", "Risk Management"],
+    "description": "Implement cybersecurity controls and security monitoring."
+  },
+  {
+    "company": "Wipro",
+    "role": "Cybersecurity Engineer",
+    "skills": ["Cybersecurity", "Network Security", "SIEM", "Cloud Security", "Linux", "Python"],
+    "description": "Develop and manage enterprise security solutions."
+  },
+
+  {
+    "company": "Deloitte",
+    "role": "Security Analyst",
+    "skills": ["Cybersecurity", "SIEM", "Incident Response", "Risk Management", "Network Security", "Linux"],
+    "description": "Monitor security events and investigate cybersecurity incidents."
+  },
+  {
+    "company": "EY",
+    "role": "Security Analyst",
+    "skills": ["Cybersecurity", "SIEM", "Incident Response", "Risk Management", "Network Security", "Linux"],
+    "description": "Analyze security events and support cyber risk management."
+  },
+  {
+    "company": "IBM",
+    "role": "Security Analyst",
+    "skills": ["Cybersecurity", "SIEM", "Splunk", "Incident Response", "Linux", "Network Security"],
+    "description": "Monitor and investigate enterprise security events."
+  },
+  {
+    "company": "Accenture",
+    "role": "Security Analyst",
+    "skills": ["Cybersecurity", "SIEM", "Incident Response", "Cloud Security", "Risk Management", "Linux"],
+    "description": "Analyze security incidents and support cybersecurity operations."
+  },
+  {
+    "company": "HCLTech",
+    "role": "Security Analyst",
+    "skills": ["Cybersecurity", "SIEM", "Network Security", "Incident Response", "Linux", "Risk Management"],
+    "description": "Monitor enterprise systems and investigate security incidents."
+  },
+
+  {
+    "company": "Oracle",
+    "role": "Database Administrator",
+    "skills": ["SQL", "Oracle", "Database Administration", "Linux", "Backup and Recovery", "Performance Tuning"],
+    "description": "Manage, secure and maintain enterprise database systems."
+  },
+  {
+    "company": "IBM",
+    "role": "Database Administrator",
+    "skills": ["SQL", "DB2", "Database Administration", "Linux", "Backup and Recovery", "Performance Tuning"],
+    "description": "Administer enterprise databases and optimize database performance."
+  },
+  {
+    "company": "TCS",
+    "role": "Database Administrator",
+    "skills": ["SQL", "Oracle", "MySQL", "Database Administration", "Linux", "Backup and Recovery"],
+    "description": "Maintain enterprise databases and support database operations."
+  },
+  {
+    "company": "Infosys",
+    "role": "Database Administrator",
+    "skills": ["SQL", "Oracle", "PostgreSQL", "Database Administration", "Linux", "Backup and Recovery"],
+    "description": "Manage databases and ensure data availability."
+  },
+  {
+    "company": "Cognizant",
+    "role": "Database Administrator",
+    "skills": ["SQL", "MySQL", "PostgreSQL", "Database Administration", "Linux", "Performance Tuning"],
+    "description": "Manage and optimize database infrastructure."
+  },
+
+  {
+    "company": "TCS",
+    "role": "QA Engineer",
+    "skills": ["Software Testing", "Manual Testing", "SQL", "Jira", "Test Cases", "API Testing"],
+    "description": "Test software applications and identify defects."
+  },
+  {
+    "company": "Infosys",
+    "role": "QA Engineer",
+    "skills": ["Software Testing", "Manual Testing", "SQL", "Jira", "Agile", "Test Cases"],
+    "description": "Perform functional and regression testing for applications."
+  },
+  {
+    "company": "Wipro",
+    "role": "QA Engineer",
+    "skills": ["Software Testing", "Manual Testing", "SQL", "API Testing", "Jira", "Agile"],
+    "description": "Ensure application quality through structured testing."
+  },
+  {
+    "company": "Cognizant",
+    "role": "QA Engineer",
+    "skills": ["Software Testing", "Manual Testing", "SQL", "Jira", "API Testing", "Agile"],
+    "description": "Test enterprise software applications and report defects."
+  },
+  {
+    "company": "Capgemini",
+    "role": "QA Engineer",
+    "skills": ["Software Testing", "Manual Testing", "SQL", "Test Cases", "API Testing", "Agile"],
+    "description": "Perform application testing and quality assurance activities."
+  },
+
+  {
+    "company": "Accenture",
+    "role": "Automation Test Engineer",
+    "skills": ["Selenium", "Python", "Java", "API Testing", "Test Automation", "Jenkins"],
+    "description": "Develop automated testing frameworks and quality pipelines."
+  },
+  {
+    "company": "TCS",
+    "role": "Automation Test Engineer",
+    "skills": ["Selenium", "Java", "SQL", "Test Automation", "Jenkins", "Git"],
+    "description": "Automate functional and regression testing."
+  },
+  {
+    "company": "Infosys",
+    "role": "Automation Test Engineer",
+    "skills": ["Selenium", "Python", "Java", "Test Automation", "API Testing", "Git"],
+    "description": "Develop automated test scripts and frameworks."
+  },
+  {
+    "company": "Cognizant",
+    "role": "Automation Test Engineer",
+    "skills": ["Selenium", "Java", "API Testing", "Test Automation", "Jenkins", "SQL"],
+    "description": "Build automation solutions for software quality assurance."
+  },
+  {
+    "company": "Tech Mahindra",
+    "role": "Automation Test Engineer",
+    "skills": ["Selenium", "Java", "Python", "Test Automation", "Jenkins", "Git"],
+    "description": "Develop automated testing solutions for enterprise software."
+  },
+
+  {
+    "company": "Deloitte",
+    "role": "Business Analyst",
+    "skills": ["SQL", "Excel", "Power BI", "Business Analysis", "Communication", "Requirements Gathering"],
+    "description": "Analyze business requirements and provide data-driven solutions."
+  },
+  {
+    "company": "Accenture",
+    "role": "Business Analyst",
+    "skills": ["SQL", "Excel", "Power BI", "Business Analysis", "Agile", "Communication"],
+    "description": "Translate business requirements into technology solutions."
+  },
+  {
+    "company": "EY",
+    "role": "Business Analyst",
+    "skills": ["Excel", "SQL", "Business Analysis", "Requirements Gathering", "Communication", "Agile"],
+    "description": "Analyze business processes and requirements."
+  },
+  {
+    "company": "Genpact",
+    "role": "Business Analyst",
+    "skills": ["SQL", "Excel", "Power BI", "Business Analysis", "Statistics", "Communication"],
+    "description": "Analyze business data and support process improvement."
+  },
+  {
+    "company": "Cognizant",
+    "role": "Business Analyst",
+    "skills": ["SQL", "Excel", "Business Analysis", "Agile", "Communication", "Requirements Gathering"],
+    "description": "Gather requirements and coordinate business and technology teams."
+  },
+
+  {
+    "company": "Adobe",
+    "role": "UI/UX Designer",
+    "skills": ["Figma", "UI Design", "UX Design", "Wireframing", "Prototyping", "User Research"],
+    "description": "Design intuitive user interfaces and digital experiences."
+  },
+  {
+    "company": "Microsoft",
+    "role": "UI/UX Designer",
+    "skills": ["Figma", "UI Design", "UX Design", "Wireframing", "Prototyping", "User Research"],
+    "description": "Design accessible and user-centered digital products."
+  },
+  {
+    "company": "IBM",
+    "role": "UI/UX Designer",
+    "skills": ["Figma", "UI Design", "UX Design", "Wireframing", "Prototyping", "Adobe XD"],
+    "description": "Create user-centered enterprise product experiences."
+  },
+  {
+    "company": "Accenture",
+    "role": "UI/UX Designer",
+    "skills": ["Figma", "UI Design", "UX Design", "User Research", "Prototyping", "Communication"],
+    "description": "Design digital experiences and interfaces for enterprise applications."
+  },
+  {
+    "company": "Freshworks",
+    "role": "UI/UX Designer",
+    "skills": ["Figma", "UI Design", "UX Design", "Wireframing", "Prototyping", "User Research"],
+    "description": "Create intuitive customer-focused product experiences."
+  },
+
+  {
+    "company": "Microsoft",
+    "role": "Product Manager",
+    "skills": ["Product Management", "Agile", "Scrum", "Product Strategy", "Market Research", "Analytics"],
+    "description": "Define product strategy, requirements and development priorities."
+  },
+  {
+    "company": "Amazon",
+    "role": "Product Manager",
+    "skills": ["Product Management", "Agile", "Product Strategy", "Market Research", "Analytics", "Communication"],
+    "description": "Manage product requirements and guide product development."
+  },
+  {
+    "company": "Google",
+    "role": "Product Manager",
+    "skills": ["Product Management", "Agile", "Product Strategy", "Analytics", "Market Research", "Communication"],
+    "description": "Define product vision and coordinate cross-functional teams."
+  },
+  {
+    "company": "Adobe",
+    "role": "Product Manager",
+    "skills": ["Product Management", "Agile", "Product Strategy", "Market Research", "Analytics", "UI Design"],
+    "description": "Develop product strategies and manage digital product initiatives."
+  },
+  {
+    "company": "Walmart Global Tech",
+    "role": "Product Manager",
+    "skills": ["Product Management", "Agile", "Scrum", "Analytics", "Market Research", "Communication"],
+    "description": "Manage technology products and customer-focused product initiatives."
+  }
+]
