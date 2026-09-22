@@ -1,2 +1,13 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-*
+__pycache__/
+*.pyc
+.venv/
+venv/
+env/
+
+uploads/*
+!uploads/.gitkeep
+
+.vscode/
+.idea/
+
+.DS_Store
